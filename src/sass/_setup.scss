@@ -1,0 +1,36 @@
+/* font sizes */
+
+/* colors */
+:root {
+  --brand-darker: #ffa5ba; // darker brand color;
+  --brand-the-darkest: #d41443; //the darkest brand color;
+
+  --accent: #d41443; // accent color, is used for section headings and hover, focus effects;
+  --accent-darker: #c7133e; // darker version of accent color;
+
+  --text-main: #907e82; // main text color;
+  --text-dark: #000000; // dark text color;
+  --text-light: #ffffff; // light text color;
+  --text-hours: #ffa5ba; // hours text color in contact section;
+  --text-button-dark: #c7133e;
+  --text-button-light: #ffffff;
+
+  --background-main: #ffb8ca; // hero header background color;
+  --background-darker: #ffa5ba; // darker main   color;
+  --background-products: #e5e5e5; // products background color;
+  --background-about: #fff5f6; // about background color;
+  --background-gallery-reviews: #e5e5e5; // gallery and reviews background color;
+  --background-contacts-footer: #fff5f6; //contacts and footer background color;
+  --background-button-light: #ffffff; // button light accent background color;
+  --background-button-light-accent: #ecebeb; // button light accent background color;
+  --background-button-dark: #d41443; // button dark background color;
+  --background-button-dark-accent: #c7133e; // button dark accent background color;
+  --background-ice-cream: #ffb8ca; // color products section 1 element;
+  --background-ice-coffee: #f0d1a5; // color products section 2 element;
+  --background-milkshakes: #c2e297; // color products section 3 element;
+
+  --dots-customer-review: #c7133e; // dots in CUSTOMER REVIEW section;
+  --undrline-effect: #e1e1e1; //underlined effect in customer review
+  --customer-review-accent: #d41443; // color of the house in customer review;
+  --customer-review-non-accent: #d9d9d9; // non accent color in customer review - dots;
+}
