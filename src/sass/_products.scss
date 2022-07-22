@@ -9,7 +9,7 @@
 }
 
 .adv-accent {
- /* font-family: $secondaryFont; */
+  
   text-transform: uppercase;
   color: var(--accent);
 
@@ -34,7 +34,7 @@
 }
 
 .adv-title {
- /* font-family: $secondaryFont; */
+  
   text-transform: uppercase;
   color: var(--brand-darker);
   margin-bottom: 15px;
@@ -150,7 +150,7 @@
     margin-bottom: 70px;
   }
 
-/*  font-family: $secondaryFont; */
+  
   font-size: 20px;
   line-height: 1.15;
   letter-spacing: 0.04em;
@@ -366,7 +366,7 @@
 .product-list__description {
   margin-bottom: 30px;
   text-align: center;
- /* font-family: $mainFont; */
+  
 
   font-weight: 700;
   font-size: 14px;
