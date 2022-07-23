@@ -1,0 +1,380 @@
+.header {
+  background-color: #ffb8ca;
+  width: 100%;
+  font-family: 'DM Sans', sans-serif;
+  display: flex;
+  justify-content: center;
+}
+.header__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  top: 37px;
+}
+.header__container {
+  min-width: none;
+}
+.header__logo-icon {
+  fill: #d41443;
+  margin-right: 15px;
+}
+.header__logo {
+  color: #d41443;
+  font-family: Titan One;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+}
+.header__head-buttons {
+  z-index: 100;
+  display: flex;
+  align-items: center;
+}
+.header__menu-button {
+  fill: #d41443;
+  background: none;
+  border: none;
+  width: 20px;
+  height: 12px;
+  margin-right: 0px;
+}
+.header__title-group {
+  position: relative;
+  top: 84px;
+  left: 5.5%;
+  right: 0.69375%;
+}
+.header__button-list {
+  display: flex;
+}
+.header__button--products {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  padding: 0px auto;
+  align-items: center;
+  font-family: DM Sans;
+  color: #ffffff;
+  background-color: #d41443;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.3;
+  text-align: center;
+  width: 102px;
+  height: 40px;
+  border: none;
+  margin-right: 15px;
+}
+.header__button--products:hover {
+  cursor: pointer;
+  background-color: #c7133e;
+}
+.header__button--how-its-made {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  padding: 0px auto;
+  align-items: center;
+  font-family: DM Sans;
+  color: #d41443;
+  background-color: #ffffff;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.3;
+  text-align: center;
+  width: 138px;
+  height: 40px;
+  border: none;
+}
+.header__button--how-its-made:hover {
+  cursor: pointer;
+  background-color: #ecebeb;
+}
+.header__ice-cream {
+  position: absolute;
+  bottom: 75px;
+  width: 284px;
+  left: 6%;
+  background-image: url('../images/header-mobile/circle.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+.header__ice-cream-image {
+  position: relative;
+  left: 22.12%;
+  bottom: -65px;
+}
+.header__milk {
+  display: flex;
+  position: absolute;
+  bottom: 45px;
+}
+.header__milk-addition {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.header__milk-button {
+  background-color: #ffffff;
+  border-radius: 50%;
+  margin-top: 20px;
+  width: 26px;
+  height: 26px;
+  border: none;
+}
+.header__milk-button:hover,
+.header__milk-button:focus {
+  cursor: pointer;
+  background-color: #ecebeb;
+}
+.header__milk-icon {
+  fill: #d41443;
+}
+.header__milk-description {
+  font-family: DM Sans;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.4;
+  max-height: 78px;
+  color: #ffffff;
+}
+.header__so-tasty {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.header__branch-list {
+  margin: 0;
+  position: absolute;
+  right: 0;
+  top: 24%;
+}
+.header_branch-list-counter {
+  font-family: Titan One;
+  font-size: 46px;
+  line-height: 1.145;
+  text-align: right;
+  color: #d41443;
+  padding-right: 18px;
+  background-image: url('../images/header-desktop/Ellipse.png');
+  background-size: 30px 30px;
+  background-repeat: no-repeat;
+  background-position: 100% 0%;
+}
+.header_branch-list-counter-description {
+  font-family: DM Sans;
+  font-size: 14px;
+  line-height: 1.286;
+  color: #ffffff;
+  margin: 0;
+}
+@media screen and (max-width: 767px) {
+  .header__buy-button {
+    display: none;
+  }
+  .header__milk {
+    display: none;
+  }
+  .header__branch {
+    display: none;
+  }
+  .header__so-tasty {
+    display: none;
+  }
+  .header__logo {
+    z-index: 100;
+  }
+  .header__container {
+    height: 502px;
+  }
+  .header__title-group {
+    z-index: 100;
+    top: 73px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .header__ice-cream {
+    bottom: 75px;
+    width: 284px;
+    left: 6%;
+    background-image: url('../images/header-mobile/circle.png');
+  }
+  .header__ice-cream-image {
+    position: relative;
+    right: 10%;
+    bottom: -75px;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .header__ice-cream {
+    left: unset;
+    right: 0%;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .header__navigation {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header__container {
+    padding: 37px 34px 0px 34px;
+    height: 399px;
+  }
+  .header__menu-button {
+    margin-right: 30px;
+  }
+  .header__buy-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    padding: 0px auto;
+    align-items: center;
+    font-family: DM Sans;
+    color: #d41443;
+    background-color: #ffffff;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.3;
+    text-align: center;
+    width: 159px;
+    height: 44px;
+    border: none;
+    &:hover {
+      cursor: pointer;
+      background-color: #ecebeb;
+    }
+  }
+  .header__buy-button-icon {
+    margin-left: 10px;
+  }
+  .header__title-group {
+    top: 15px;
+    left: 0px;
+  }
+  .header__button--products {
+    font-size: 8px;
+    line-height: 1.25;
+    width: 61.2px;
+    height: 24px;
+    margin-right: 9.2px;
+  }
+  .header__button--how-its-made {
+    font-size: 8px;
+    line-height: 1.25;
+    width: 82.8px;
+    height: 24px;
+  }
+  .header__milk-description {
+    font-size: 8px;
+    line-height: 1.5;
+    max-height: 48px;
+  }
+  .header__milk-addition {
+    max-width: 114px;
+    margin-left: 0px;
+    padding-bottom: 6px;
+  }
+  .header__milk {
+    bottom: 28px;
+  }
+  .header_branch-list-counter {
+    font-size: 28px;
+    line-height: 1.14;
+    padding-right: 10px;
+    background-image: url('../images/header-tablet/Ellipse.png');
+    background-size: 16px 16px;
+  }
+  .header_branch-list-counter-description {
+    font-size: 8px;
+    line-height: 1.25;
+  }
+  .header__branch-list {
+    right: 34px;
+    top: 24%;
+  }
+  .header__ice-cream {
+    bottom: 46px;
+    width: 324px;
+    left: 40%;
+    background-image: url('../images/header-tablet/circle.png');
+  }
+  .header__ice-cream-image {
+    bottom: -46px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header {
+    background-color: #ffb8ca;
+    width: 100%;
+    font-family: 'DM Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+  }
+  .header__container {
+    height: 665px;
+  }
+  .header__menu-button {
+    display: none;
+  }
+  .header__buy-button-icon {
+    margin-left: 10px;
+  }
+  .header__title-group {
+    top: 84px;
+    left: 5.5%;
+    right: 0.69375%;
+  }
+  .header__button--products {
+    font-size: 14px;
+    line-height: 1.3;
+    width: 102px;
+    height: 40px;
+    margin-right: 15px;
+  }
+  .header__button--how-its-made {
+    font-size: 14px;
+    line-height: 1.3;
+    width: 138px;
+    height: 40px;
+  }
+  .header__ice-cream {
+    bottom: 65px;
+    width: 538px;
+    left: 40%;
+    background-image: url('../images/header-desktop/circle.png');
+  }
+  .header__ice-cream-image {
+    position: relative;
+    left: 22.12%;
+    bottom: -65px;
+  }
+  .header__milk-addition {
+    max-width: 200px;
+    margin-left: 20px;
+    padding-bottom: 11px;
+  }
+  .header__milk-description {
+    font-size: 14px;
+    line-height: 1.4;
+    max-height: 78px;
+  }
+  .header__branch-list {
+    right: 0;
+  }
+  .header_branch-list-counter {
+    font-size: 46px;
+    line-height: 1.145;
+    padding-right: 18px;
+    background-image: url('../images/header-desktop/Ellipse.png');
+    background-size: 30px 30px;
+  }
+  .header_branch-list-counter-description {
+    font-size: 14px;
+    line-height: 1.286;
+  }
+}
