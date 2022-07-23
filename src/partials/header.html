@@ -1,10 +1,16 @@
 <header class="header">
   <div class="container header__container">
-    <a href="" class="header__logo">ICECREAM</a>
+    <div class="header__head">
+    <a href="" class="header__logo">
+      <svg width="50px" height="50px" class="header__logo-icon">
+        <use href="./images/svg/icons.svg#icon-logo"></use>
+      </svg>
+      ICECREAM
+    </a>
     <nav class="header__navigation navigation">
       <ul class="navigation__list">
         <li class="navigation__item">
-          <a class="navigation__link navigation__link--active" href="#header">Home</a>
+          <a class="navigation__link" href="#header">Home</a>
         </li>
         <li class="navigation__item">
           <a class="navigation__link" href="#about-us">About us</a>
@@ -20,54 +26,127 @@
         </li>
       </ul>
     </nav>
-    <button class="header__menu-button" type="button" data-modal-open>
-      <svg class="header__menu-icon">
-        <use href="#"></use>
+    <div class="header__head-buttons"> 
+    <button class="header__menu-button" type="button" data-menu-open>
+      <svg width=20px height=12px class="header__menu-icon">
+        <use href="./images/svg/icons.svg#icon-burger"></use>
       </svg>
     </button>
     <button class="header__buy-button" type="button">
-      Buy now<svg class="header__buy-button-icon"><use href=""></use></svg>
+      Buy now
+      <svg width=8px height=10px class="header__buy-button-icon">
+        <use href="./images/svg/icons.svg#icon-arrow-right-button"></use>
+      </svg>
     </button>
+    </div>
+    </div>
     <div class="header__title-group">
-      <div class="header__title">ICE CREAM MADE WITH<span" class="header__title-">PASSION</span></div>
-      <ul>
-        <li class="header__products-button">
-          <button class="header__products-button-inside">Products</button>
+      <h1 class="header__title title">ICE CREAM MADE WITH <span" class="title__feature">PASSION</span></h1>
+      <ul class="header__button-list">
+        <li class="header__button">
+          <button class="header__button--products">Products</button>
         </li>
-        <li class="header__how-its-made-button">
-          <button class="header__how-its-made-button-inside">How it's made?</button>
+        <li class="header__button">
+          <button class="header__button--how-its-made">How it's made?</button>
         </li>
       </ul>
     </div>
     <div class="header__ice-cream">
         <img
-            class="header__ice-cream-image" 
-            src="#"
-            alt="Ice creams in a cone"/>
+                src="./images/header-desktop/iceCream.png"
+                srcset="
+                ./images/header-tablet/iceCream.png 143w,
+                ./images/header-mobile/iceCream.png 171w,  
+                ./images/header-desktop/iceCream.png 236w,
+                ./images/header-tablet/iceCream@2x.png 286w,
+                ./images/header-mobile/iceCream@2x.png 342w,
+                ./images/header-desktop/iceCream@2x.png 472w
+                "
+                sizes="(min-width: 1200px) 236px, (min-width: 768px) 143px, (min-width: 320px) 171px"
+                alt="Ice creams in a cone"
+                class="header__ice-cream-image"
+          />
     </div>
     <div class="header__branch">
         <ul class="header__branch-list">
-            <li class="header_branch-list-counter">16<span class="header_branch-list-counter-description">cafes</span></li>
-            <li class="header_branch-list-counter">23<span class="header_branch-list-counter-description">food trucks</span></li>
+            <li class="header_branch-list-counter">16<p class="header_branch-list-counter-description">cafes</p></li>
+            <li class="header_branch-list-counter">23<p class="header_branch-list-counter-description">food trucks</p></li>
         </ul>
     </div>
     <div class="header__milk">
-        <img 
-            class="header__milk-image"
-            src="#"
-            alt="Milk in a pitcher with inscription BIO ECO"
-        />
-        <div>
-        <div class="header__milk-description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-        </div>
-        <svg class="header__milk-icon">
-            <use href=""></use>
-        </svg>
+        <img
+                src="./images/header-desktop/milk.png"
+                srcset="
+                ./images/header-tablet/milk.png 124w, 
+                ./images/header-desktop/milk.png 188w,
+                ./images/header-tablet/milk@2x.png 248w,
+                ./images/header-desktop/milk@2x.png 376w
+                "
+                sizes="(min-width: 1200px) 188px, (min-width: 768px) 124px"
+                alt="Milk in a pitcher with inscription BIO ECO"
+                class="header__milk-image"
+          />
+        <div class="header__milk-addition">
+          <button class="header__milk-button">
+          <svg width=10px height=10px class="header__milk-icon">
+            <use href="./images/svg/icons.svg#arrow-right"></use>
+          </svg>
+          </button>
+          <div class="header__milk-description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et          </div>
         </div>
     </div>
     <div class="header__so-tasty">
-        <img class="header__so-tasty-image" src="#" alt="">
+        <img
+            src="./images/header-desktop/sootasty.png"
+            srcset="
+            ./images/header-tablet/tasty.png 168w, 
+            ./images/header-desktop/sootasty.png 293w,
+            ./images/header-tablet/tasty@2x.png 336w,
+            ./images/header-desktop/sootasty@2x.png 586w
+            "
+            sizes="(min-width: 1200px) 293px, (min-width: 768px) 168px"
+            alt="Girl with ice cream saing SOOO TASTYO"
+            class="header__so-tasty-image"
+          /> 
+    </div>
+    <div class="backdrop backdrop--hidden" data-menu>
+      <div class="menu">
+        <button
+          type="button"
+          class="menu__close-button"
+          data-menu-close
+        >
+          <svg width=14px height=14px class="menu__close-icon">
+            <use href="./images/svg/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <button class="menu__buy-button" type="button">
+          Buy now
+          <svg width=8px height=10px class="menu__buy-icon">
+            <use href="./images/svg/arrow-right-button.svg#icon-arrow-right-button"></use>
+          </svg>
+        </button>
+        <nav class="menu__navigation navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a class="navigation__link" href="#header">Home</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#about-us">About us</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#how-its-made">How it's made?</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#our-products">Our products</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </div>
 </header>

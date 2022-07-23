@@ -1,0 +1,45 @@
+.title {
+  font-family: Titan One;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 1.15;
+  text-transform: uppercase;
+  letter-spacing: 4%;
+  color: #ffffff;
+  max-width: 218px;
+  max-height: 106px;
+  margin: 0px 0px 19px 0px;
+}
+.title__feature {
+  color: #d41443;
+  font-size: 46px;
+  line-height: 0.905;
+}
+@media screen and (min-width: 768px) {
+  .title {
+    font-size: 22px;
+    line-height: 1.14;
+    letter-spacing: 4%;
+    max-width: 168px;
+    max-height: 80px;
+    margin: 0px 0px 20px 0px;
+  }
+  .title__feature {
+    font-size: 34px;
+    line-height: 0.905;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .title {
+    font-size: 38px;
+    line-height: 1.145;
+    letter-spacing: 4%;
+    max-width: 277px;
+    max-height: 137px;
+    margin: 0px 0px 25px 0px;
+  }
+  .title__feature {
+    font-size: 58px;
+    line-height: 0.905;
+  }
+}
