@@ -4,6 +4,7 @@
  */
 
 // Style dla pliku z przykładem HTML fragmentu
+@import './setup';
 @import './container';
 @import './header';
 @import './navigation';
@@ -12,6 +13,5 @@
 @import './menu';
 @import './products';
 @import './reset';
-@import './setup';
 @import './milk';
 @import './footer';

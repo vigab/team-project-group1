@@ -1,11 +1,11 @@
 .title {
-  font-family: 'titan one';
+  font-family: $secondaryFont;
   font-size: 26px;
   font-weight: 400;
   line-height: 1.15;
   text-transform: uppercase;
   letter-spacing: 4%;
-  color: #ffffff;
+  color: var(--text-light);
   max-width: 218px;
   max-height: 106px;
   margin: 0px 0px 19px 0px;
