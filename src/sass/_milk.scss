@@ -1,0 +1,99 @@
+.milk {
+  background-color: var(--background-about);
+  font-family: $mainFont; 
+  &__image {
+    margin-right: 37px;
+  }
+  }
+.about {
+  &__title {
+    padding-top: 125px;
+    text-align: center;
+    color: var(--brand-darker);
+    font-size: large;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1.14;
+    font-family: $secondaryFont;
+  }
+  &__title2 {
+    padding-top: 15px;
+    text-align: center;
+    color: var(--brand-the-darkest);
+    font-size: large;
+    font-weight: 400;
+    font-size: 58px;
+    line-height: 1.14;
+    font-family: $secondaryFont;
+  }
+  &__description {
+    color: black;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.76;
+    padding-bottom: 35px;
+  }
+  &__description2 {
+    color: var(--text-main);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.94;
+    padding-bottom: 45px;
+  }
+  &__content {
+    padding-top: 55px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  &__text {
+    padding-left: 37px;
+    max-width: 463px;
+  }
+  &__button{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.3;
+    color: var(--brand-the-darkest);
+
+    background-color: white;
+    border-radius: 22px;
+    border: none;
+    width: 176px;
+    height: 44px;
+    &:hover{
+      cursor: pointer;
+      background-color: var(--background-button-light-accent);
+    }
+  }
+  }
+.advantages {
+  &__title-hidden {
+    display: none;
+  }
+  &__title{
+    padding-top: 40px;
+    font-size: 58px;
+    font-weight: 400;
+    line-height: 1.14;
+    color: var(--brand-the-darkest);
+    font-family: $secondaryFont;
+  }
+  &__list {
+    padding-top: 39px;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: center;
+  }
+  &__text{
+    max-width: 330px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.76;
+    color: black;
+    padding-top: 15px;
+    padding-bottom: 310px;
+  }
+}
