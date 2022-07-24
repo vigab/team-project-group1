@@ -76,6 +76,9 @@
 <symbol id="icon-arrow-right-button" fill="none" viewBox="0 0 8 10">
 <path d="M1.61633 1L6.04401 5L1.61633 9" stroke="#D41443" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </symbol>
+<symbol id="icon-arrow-right-button2" fill="none" viewBox="0 0 8 10">
+<path d="M1.61633 1L6.04401 5L1.61633 9" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</symbol>
 
 </defs>
 </svg>
