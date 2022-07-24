@@ -1,7 +1,7 @@
 .header {
-  background-color: #ffb8ca;
+  background-color: var(--background-main);
   width: 100%;
-  font-family: 'DM Sans', sans-serif;
+  font-family: $mainFont;
   display: flex;
   justify-content: center;
 }
@@ -15,12 +15,12 @@
   min-width: none;
 }
 .header__logo-icon {
-  fill: #d41443;
+  fill: var(--brand-the-darkest);
   margin-right: 15px;
 }
 .header__logo {
-  color: #d41443;
-  font-family: Titan One;
+  color: var(--brand-the-darkest);
+  font-family: $secondaryFont;
   font-size: 30px;
   display: flex;
   align-items: center;
@@ -31,7 +31,7 @@
   align-items: center;
 }
 .header__menu-button {
-  fill: #d41443;
+  fill: var(--brand-the-darkest);
   background: none;
   border: none;
   width: 20px;
@@ -54,9 +54,9 @@
   border-radius: 20px;
   padding: 0px auto;
   align-items: center;
-  font-family: DM Sans;
-  color: #ffffff;
-  background-color: #d41443;
+  font-family: $mainFont;
+  color: var(--text-light);
+  background-color: var(--background-button-dark);
   font-weight: 400;
   font-size: 14px;
   line-height: 1.3;
@@ -68,7 +68,7 @@
 }
 .header__button--products:hover {
   cursor: pointer;
-  background-color: #c7133e;
+  background-color: var(--accent-darker);
 }
 .header__button--how-its-made {
   display: flex;
@@ -77,9 +77,9 @@
   border-radius: 20px;
   padding: 0px auto;
   align-items: center;
-  font-family: DM Sans;
-  color: #d41443;
-  background-color: #ffffff;
+  font-family: $mainFont;
+  color: var(--brand-the-darkest);
+  background-color: var(--background-button-light);
   font-weight: 400;
   font-size: 14px;
   line-height: 1.3;
@@ -90,7 +90,7 @@
 }
 .header__button--how-its-made:hover {
   cursor: pointer;
-  background-color: #ecebeb;
+  background-color: var(--background-button-light-accent);
 }
 .header__ice-cream {
   position: absolute;
@@ -117,7 +117,7 @@
   flex-direction: column-reverse;
 }
 .header__milk-button {
-  background-color: #ffffff;
+  background-color: var(--background-button-light);
   border-radius: 50%;
   margin-top: 20px;
   width: 26px;
@@ -127,18 +127,18 @@
 .header__milk-button:hover,
 .header__milk-button:focus {
   cursor: pointer;
-  background-color: #ecebeb;
+  background-color: var(--background-button-light-accent);
 }
 .header__milk-icon {
-  fill: #d41443;
+  fill: var(--brand-the-darkest);
 }
 .header__milk-description {
-  font-family: DM Sans;
+  font-family: $mainFont;
   font-style: normal;
   font-size: 14px;
   line-height: 1.4;
   max-height: 78px;
-  color: #ffffff;
+  color: var(--text-light);
 }
 .header__so-tasty {
   position: absolute;
@@ -152,11 +152,11 @@
   top: 24%;
 }
 .header_branch-list-counter {
-  font-family: Titan One;
+  font-family: $secondaryFont;
   font-size: 46px;
   line-height: 1.145;
   text-align: right;
-  color: #d41443;
+  color: var(--accent);
   padding-right: 18px;
   background-image: url('../images/header-desktop/Ellipse.png');
   background-size: 30px 30px;
@@ -164,10 +164,10 @@
   background-position: 100% 0%;
 }
 .header_branch-list-counter-description {
-  font-family: DM Sans;
+  font-family: $mainFont;
   font-size: 14px;
   line-height: 1.286;
-  color: #ffffff;
+  color: var(--text-light);
   margin: 0;
 }
 @media screen and (max-width: 767px) {
@@ -234,9 +234,9 @@
     border-radius: 20px;
     padding: 0px auto;
     align-items: center;
-    font-family: DM Sans;
-    color: #d41443;
-    background-color: #ffffff;
+    font-family: $mainFont;
+    color: var(--brand-the-darkest);
+    background-color: var(--background-button-light);
     font-weight: 700;
     font-size: 14px;
     line-height: 1.3;
@@ -246,7 +246,7 @@
     border: none;
     &:hover {
       cursor: pointer;
-      background-color: #ecebeb;
+      background-color: var(--background-button-light-accent);
     }
   }
   .header__buy-button-icon {
@@ -308,13 +308,6 @@
   }
 }
 @media screen and (min-width: 1200px) {
-  .header {
-    background-color: #ffb8ca;
-    width: 100%;
-    font-family: 'DM Sans', sans-serif;
-    display: flex;
-    justify-content: center;
-  }
   .header__container {
     height: 665px;
   }
