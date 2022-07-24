@@ -145,6 +145,7 @@
 .product-list__title {
   position: relative;
   margin-bottom: 66px;
+  font-family: $secondaryFont;
 
   @media screen and (min-width: 1280px) {
     margin-bottom: 70px;
@@ -367,7 +368,7 @@
   margin-bottom: 30px;
   text-align: center;
   
-
+  font-family: $mainFont;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.5;
@@ -401,5 +402,5 @@
   display: block;
   height: 15px;
   width: 15px;
-  fill: var(--accent);
+  stroke: var(--accent);
 }
