@@ -9,8 +9,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-            
-
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .footer__list {
@@ -18,8 +18,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    //margin-top: -100px;
+    
     margin-right: -30px;
+    margin-top: -200px;
     
 }
 
@@ -31,7 +32,8 @@
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
     margin-right: 30px;
-    max-width: 220px;
+    width: 90%;
+    // max-width: 220px;
     margin-bottom: 20px;
 }
 .contacts {
@@ -80,12 +82,13 @@
     align-items: center;
     display: flex;
     fill: var(--background-button-light);
+    
 
 }
 .button__icon--light {
     color: var(--text-button-light);
     fill: var(--text-button-light);
-    
+    stroke: var(--text-button-light);
 }
 
 
@@ -273,7 +276,7 @@
     fill:var(--social-icon-color);
    
     transition-property: background-color;
-        transition-duration: 250ms;
+    transition-duration: 250ms;
 
 
 }
@@ -330,7 +333,7 @@ font-weight: 700;
 font-size: 14px;
 line-height: 21px;
 color: var(--text-main);
-padding: 22px 91px 25px 78px;
+padding: 22px 84px 25px 75px;
 
 }
 
@@ -344,6 +347,7 @@ padding: 22px 91px 25px 78px;
     .footer__locations {
         margin-right: 20px;
         padding: 50px 32px;
+        width: 100%;
     }
     .location__title {
         margin-bottom: 30px;
@@ -437,7 +441,7 @@ padding: 22px 91px 25px 78px;
 .footer__locations {
     padding: 51px 44px 62px;
     margin-right: 30px;
-    max-width: 330px;
+    width: 100%;
     
 }
 .location__place {
@@ -497,18 +501,19 @@ padding: 22px 91px 25px 78px;
     padding-bottom: 10px;
     line-height: 26px;
 }
-// .page-footer::before {
-//     content:"a";
+ }
+// .page-footer .container {
 //     background-image: url('../images/footer/sectionbg1280x382.jpg');
-//     width: 1280px;
-//     height: 382px;
+//     background-repeat: no-repeat;
+    
+// }
+ 
 
-//         opacity: 80%;
         
             
 // @media screen and (min-resolution: 2dppx) {
 // background-image: url('../images/footer/sectionbg@2x2560x764.jpg');
 //         height: 764px;}
 //     }
-}
+
  
