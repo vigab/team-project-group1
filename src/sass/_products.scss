@@ -9,7 +9,7 @@
 }
 
 .adv-accent {
-  
+  font-family: $secondaryFont;
   text-transform: uppercase;
   color: var(--accent);
 
@@ -34,7 +34,7 @@
 }
 
 .adv-title {
-  
+  font-family: $secondaryFont;
   text-transform: uppercase;
   color: var(--brand-darker);
   margin-bottom: 15px;
