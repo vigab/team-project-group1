@@ -1,7 +1,7 @@
 .header {
   background-color: var(--background-main);
-  width: 100%;
   font-family: $mainFont;
+  width: 100%;
   display: flex;
   justify-content: center;
 }
@@ -10,9 +10,6 @@
   align-items: center;
   justify-content: space-between;
   top: 37px;
-}
-.header__container {
-  min-width: none;
 }
 .header__logo-icon {
   fill: var(--brand-the-darkest);
@@ -40,9 +37,6 @@
 }
 .header__title-group {
   position: relative;
-  top: 84px;
-  left: 5.5%;
-  right: 0.69375%;
 }
 .header__button-list {
   display: flex;
@@ -97,7 +91,6 @@
   bottom: 75px;
   width: 284px;
   left: 6%;
-  background-image: url('../images/header-mobile/circle.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -171,6 +164,9 @@
   margin: 0;
 }
 @media screen and (max-width: 767px) {
+  .header {
+    overflow: clip;
+  }
   .header__buy-button {
     display: none;
   }
@@ -191,16 +187,27 @@
   }
   .header__title-group {
     z-index: 100;
-    top: 73px;
+    top: 193px;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
   .header__ice-cream {
     bottom: 75px;
-    width: 284px;
+    width: 346px;
     left: 6%;
-    background-image: url('../images/header-mobile/circle.png');
+    background-image: none;
+    &::before {
+      position: absolute;
+      bottom: 0px;
+      content: '';
+      display: inline-block;
+      width: 346px;
+      height: 344px;
+      border-radius: 50%;
+      background-color: var(--background-darker);
+      overflow: clip;
+    }
   }
   .header__ice-cream-image {
     position: relative;
@@ -309,6 +316,7 @@
 }
 @media screen and (min-width: 1200px) {
   .header__container {
+    padding: 37px 115px 0px 46px;
     height: 665px;
   }
   .header__menu-button {
@@ -357,7 +365,7 @@
     max-height: 78px;
   }
   .header__branch-list {
-    right: 0;
+    right: 97px;
   }
   .header_branch-list-counter {
     font-size: 46px;
@@ -369,5 +377,8 @@
   .header_branch-list-counter-description {
     font-size: 14px;
     line-height: 1.286;
+  }
+  .header__so-tasty {
+    right: 109px;
   }
 }
