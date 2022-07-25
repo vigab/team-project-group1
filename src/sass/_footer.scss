@@ -17,7 +17,7 @@
     align-items: center;
     justify-content: space-between;
     
-    margin-right: -30px;
+    margin-right: 0px;
     margin-top: -150px;
     
 }
@@ -327,7 +327,7 @@
 @media screen and (min-width: 768px) {
     .footer__list {
         flex-direction: row;
-        margin-right: -20px;
+        margin-right: -15px;
     }
     .footer__locations {
         margin-right: 20px;
