@@ -4,17 +4,20 @@
  */
 
 // Style dla pliku z przykładem HTML fragmentu
+@import './visually-hidden';
 @import './setup';
 @import './container';
 @import './header';
 @import './navigation';
 @import './title';
 @import './backdrop';
+@import './modal-backdrop';
+@import './modal';
+@import './form';
 @import './menu';
 @import './products';
 @import './reset';
 @import './milk';
 @import './footer';
 @import './comments';
-@import './visually-hidden';
 @import './photos-section';
