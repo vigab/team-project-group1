@@ -85,32 +85,21 @@
     }
 }
 
-.button__svg {
-    margin-left: 14px;
-
-    &--light {
-    stroke: var(--text-button-light);
-    fill:var(--text-button-light);
-    }
-}
-
-.button__icon {
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    fill: var(--background-button-light); 
-}
-
-.svg__mark {
+.button__mark--light {
     color:var(--text-button-light) ;
-    justify-content: center;
-    align-items: center;
-    display: flex;
     margin-left: 10px;
+    font-weight: 700;
+    border-radius: 0 3p 3px 0;
+}
+.button__mark--dark {
+    color: var(--background-button-dark);
+    margin-left: 10px;
+    font-weight: 700;
+    border-radius: 0 3p 3px 0;
 }
 
 
-//ogólne ustawienia dla buttonów pod tytuł//
+//------------------------------sekcja kontakt----//
 .location__title {
     font-size: 12px;
     font-weight: 500;
