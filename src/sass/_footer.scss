@@ -2,15 +2,13 @@
     // wymaga zmiany color tła na var z root
     background: var(--background-contacts-footer);
     
-
-}
-
-.page-footer .container {
+    & .container {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-left: 15px;
     padding-right: 15px;
+    }
 }
 
 .footer__list {
@@ -62,7 +60,6 @@
     display: flex;
     align-items: center;
     text-align: center;
-
     color: var(--background-button-light);
     background: var(--background-button-dark);
     border-radius: 22px;
@@ -70,23 +67,38 @@
     padding-left: 35px;
     padding-right: 35px;
     cursor: pointer;
+
+    &--color {
+    color: var(--background-button-dark);
+    background: var(--background-button-light);
+
+
+        &:hover,
+        &:focus {
+        background: var(--background-button-light-accent);
+        color: var(--background-button-dark);
+        }
+    }
+
+    &--margin {
+        margin-bottom: 10px;
+    }
 }
 
 .button__svg {
-
     margin-left: 14px;
-}
-.button__svg--light {
+
+    &--light {
     stroke: var(--text-button-light);
     fill:var(--text-button-light);
+    }
 }
+
 .button__icon {
     justify-content: center;
     align-items: center;
     display: flex;
-    fill: var(--background-button-light);
-    
-
+    fill: var(--background-button-light); 
 }
 
 .svg__mark {
@@ -97,22 +109,9 @@
     margin-left: 10px;
 }
 
-.button-locations--color {
-    color: var(--background-button-dark);
-    background: var(--background-button-light);
-}
-
-.button-locations--color:hover {
-    background: var( --background-button-light-accent);
-    color: var( --background-button-dark);
-}
-.button-locations--margin {
-    margin-bottom: 10px;
-}
 
 //ogólne ustawienia dla buttonów pod tytuł//
 .location__title {
-    
     font-size: 12px;
     font-weight: 500;
     line-height: 22px;
@@ -127,22 +126,20 @@
     padding-right: 10px;
     border: none;
     
-}
+    &--cafe {
+        background: var( --background-ice-coffee);
+        border: var( --background-ice-coffee);
+        margin-bottom: 25px;
+    }
 
-.location__title--cafe {
-    background: var( --background-ice-coffee);
-    border: var( --background-ice-coffee);
-    margin-bottom: 25px;
-}
-
-.location__title--food {
-    background: var( --background-milkshakes);
-    border: var( --background-milkshakes);
-    margin-bottom: 25px;
+    &--food {
+        background: var( --background-milkshakes);
+        border: var( --background-milkshakes);
+        margin-bottom: 25px;
+    }
 }
 
 .location__place {
-    
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
@@ -151,14 +148,12 @@
     text-align: left;
     color: var(--text-dark);
     
-
-}
-.location__place--margin {
+    &--margin {
     margin-bottom: 10px;
+    }
 }
 
 .location__info {
-   
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
@@ -199,7 +194,6 @@
 }
 
 .location__contact-list {
-    
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
@@ -219,9 +213,10 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-}
-.footer__section-bottom--margin {
+    
+    &--margin {
     margin-bottom: 43px;
+    }
 }
 
 //duży napis w footerze//
@@ -235,7 +230,6 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: var( --text-hours);
-   
     flex-wrap: wrap;
     max-width: 90%;
     margin-bottom: 17px;
@@ -260,14 +254,13 @@
     flex-direction: column;
     align-items: flex-end;
     flex-wrap: nowrap;
-}
-.footer__social-list {
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
-    align-content: flex-end;
-   
 
+    &-list {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        align-content: flex-end;
+    }
 }
 .footer__social-margin {
     margin-top: 43px;
@@ -279,12 +272,10 @@
 
 .social-list__link {
     fill:var(--social-icon-color);
-   
     transition-property: background-color;
     transition-duration: 250ms;
-
-
 }
+
 .social-list__icon {
     fill: var(--social-icon-color);
 
@@ -326,19 +317,19 @@
 
 //podstopka//-----------------------------------------------------
 .footer__bottom {
-display: flex;
-flex-direction: column;
-flex-wrap: wrap;
-border-top: 1px solid var( --undrline-effect);
-width: 100%;
-align-items: center;
-text-align: center;
-font-style: normal;
-font-weight: 700;
-font-size: 14px;
-line-height: 21px;
-color: var(--text-main);
-padding: 22px 80px 25px 75px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-top: 1px solid var( --undrline-effect);
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--text-main);
+    padding: 22px 80px 25px 75px;
 
 }
 
@@ -526,12 +517,4 @@ padding: 22px 80px 25px 75px;
 }
  }
  
-
-        
-            
-// @media screen and (min-resolution: 2dppx) {
-// background-image: url('../images/footer/sectionbg@2x2560x764.jpg');
-//         height: 764px;}
-//     }
-
  
