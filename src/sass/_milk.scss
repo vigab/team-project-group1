@@ -1,12 +1,21 @@
 .milk {
+  background-image: url(../images/about-advantages/milk-drops-desktop@1x.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 0px;
   background-color: var(--background-about);
-  font-family: $mainFont; 
+  font-family: $mainFont;
   &__image {
     margin-right: 0;
   }
+}
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .milk {
+  background-image: url(../images/about-advantages/milk-drops-desktop@2x.png);
   }
+}
 .about {
-  &__title {
+    &__title {
     padding-top: 125px;
     text-align: center;
     color: var(--brand-darker);
@@ -45,13 +54,13 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
   }
   &__text {
     padding-left: 0;
     max-width: 463px;
   }
-  &__button{
+  &__button {
     text-align: center;
     font-size: 16px;
     font-weight: 700;
@@ -63,17 +72,20 @@
     border-style: none;
     width: 176px;
     height: 44px;
-    &:hover{
+    &-icon {
+      margin-left: 10px;
+    }
+    &:hover {
       cursor: pointer;
       background-color: var(--background-button-light-accent);
     }
   }
-  }
+}
 .advantages {
   &__title-hidden {
     display: none;
   }
-  &__title{
+  &__title {
     padding-top: 40px;
     font-size: 58px;
     font-weight: 400;
@@ -88,7 +100,7 @@
     list-style: none;
     justify-content: center;
   }
-  &__text{
+  &__text {
     max-width: 330px;
     font-size: 16px;
     font-weight: 700;
@@ -97,7 +109,86 @@
     padding-top: 15px;
     padding-bottom: 310px;
   }
-  &__icon{
-    max-height: 50px;
+  &__icon {
+    height: 50px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .milk{
+    background-image: none;
+  }
+  .milk__image {
+    max-width: 340px;
+  }
+  .about {
+    &__text {
+      max-width: 340px;
+    }
+    &__title {
+      font-size: 26px;
+    }
+    &__title2 {
+      font-size: 48px;
+    }
+    &__description {
+      font-size: 14px;
+    }
+  }
+  .advantages {
+    &__list {
+      justify-content: space-around;
+      & li {
+        max-width: 180px;
+      }
+    }
+    &__title {
+      font-size: 48px;
+    }
+    &__text {
+      font-size: 14px;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .milk{
+    background-image: url(../images/about-advantages/milk-drops-mob@1x.png);
+  }
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .milk {
+  background-image: url(../images/about-advantages/milk-drops-mob@2x.png);
+  }
+}
+  .milk__image {
+    max-width: 280px;
+  }
+  .about {
+    &__content {
+      flex-direction: column;
+    }
+    &__title {
+      font-size: 18px;
+    }
+    &__title2 {
+      font-size: 34px;
+    }
+    &__description {
+      font-size: 12px;
+    }
+  }
+  .advantages {
+    &__list {
+      flex-direction: column;
+      justify-content: center;
+      & li {
+        max-width: 230px;
+      }
+    }
+    &__title {
+      font-size: 36px;
+    }
+    &__text {
+      font-size: 12px;
+      padding-bottom: 38px;
+    }
   }
 }
