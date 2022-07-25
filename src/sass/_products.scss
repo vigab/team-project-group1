@@ -58,6 +58,20 @@
   background-color: var(--background-white);
 }
 
+.product-container {
+  @media screen and (min-width: 480px) {
+    width: 300px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 720px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 1080px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
 .product-box {
   @media screen and (max-width: 767px) {
     padding: 121px 20px 98px 20px;
