@@ -1,7 +1,14 @@
 .menu {
-  z-index: 110;
-  position: relative;
-  padding: 60px 21px 0px 21px;
+  position: fixed;
+  top: 0%;
+  right: 0%;
+  width: 250px;
+  height: 100%;
+  background-color: var(--background-menu);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  z-index: 150;
 }
 .menu__close-button {
   position: absolute;
@@ -52,6 +59,8 @@
 }
 @media screen and (min-width: 768px) {
   .menu {
+    position: fixed;
     padding: 60px 24px 0px 24px;
+    width: 254px;
   }
 }

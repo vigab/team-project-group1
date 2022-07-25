@@ -1,4 +1,4 @@
-<header class="header">
+<header class="header" id="header">
   <div class="container header__container">
     <div class="header__head">
     <a href="" class="header__logo">
@@ -32,7 +32,7 @@
         <use href="./images/svg/icons.svg#icon-burger"></use>
       </svg>
     </button>
-    <button class="header__buy-button" type="button">
+    <button class="header__buy-button" type="button" data-modal-open>
       Buy now
       <svg width=8px height=10px class="header__buy-button-icon">
         <use href="./images/svg/icons.svg#icon-arrow-right-button"></use>
@@ -44,10 +44,10 @@
       <h1 class="header__title title">ICE CREAM MADE WITH <span" class="title__feature">PASSION</span></h1>
       <ul class="header__button-list">
         <li class="header__button">
-          <button class="header__button--products">Products</button>
+          <a href="#our-products"><button class="header__button--products">Products</button></a>
         </li>
         <li class="header__button">
-          <button class="header__button--how-its-made">How it's made?</button>
+          <a href="#how-its-made"><button class="header__button--how-its-made">How it's made?</button></a>
         </li>
       </ul>
     </div>
@@ -110,6 +110,9 @@
             class="header__so-tasty-image"
           /> 
     </div>
+  </div>
+</header>
+<!-- MOBILE/TABLET MENU START -->
     <div class="backdrop backdrop--hidden" data-menu>
       <div class="menu">
         <button
@@ -121,10 +124,10 @@
             <use href="./images/svg/icons.svg#icon-close"></use>
           </svg>
         </button>
-        <button class="menu__buy-button" type="button">
+        <button class="menu__buy-button" type="button" data-menu-close data-modal-open>
           Buy now
           <svg width=8px height=10px class="menu__buy-icon">
-            <use href="./images/svg/arrow-right-button.svg#icon-arrow-right-button"></use>
+            <use href="./images/svg/icons.svg#icon-arrow-right-button"></use>
           </svg>
         </button>
         <nav class="menu__navigation navigation">
@@ -148,5 +151,86 @@
         </nav>
       </div>
     </div>
-  </div>
-</header>
+    <!-- MOBILE/TABLET MENU END -->
+<!-- MODAL START -->
+     <div class="modal-backdrop backdrop--hidden" data-modal>
+      <div class="modal">
+        <button
+          type="button"
+          class="menu__close-button"
+          data-modal-close
+        >
+          <svg width=14px height=14px class="menu__close-icon">
+            <use href="./images/svg/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <form class="form modal__form">
+          <h3 class="form__title">Leave your details in the form below</h3>
+          <label for="name">
+            <div class="form__input-box">
+              <div class="form__input-title">Company name/Full Name</div>
+              <input
+                id="name"
+                type="text"
+                name="name"
+                class="form__input"
+                required
+              />
+            </div>
+          </label>
+          <label for="telephone-number">
+            <div class="form__input-box">
+              <div class="form__input-title">Telefon</div>
+              <input
+                id="telephone-number"
+                type="tel"
+                name="tel"
+                class="form__input"
+                required
+              />
+            </div>
+          </label>
+          <label for="email" class="">
+            <div class="form__input-box">
+              <div class="form__input-title">Email</div>
+              <input
+                id="email"
+                type="email"
+                name="email"
+                class="form__input"
+                required
+              />
+            </div>
+          </label>
+          <label for="comment">
+            <div class="form__input-title">Additional informations</div>
+            <textarea
+              id="comment"
+              name="comment"
+              placeholder="Enter text"
+              class="form__textarea"
+            ></textarea>
+          </label>
+          <div class="modal-terms">
+            <input
+              type="checkbox"
+              name="statute-checkbox"
+              id="user-policy"
+              class="form__policy visually-hidden"
+              required
+            />
+            <label for="user-policy" class="form__policy-text">
+              <span
+                >I declare that i accept
+                <a class="checkbox-statute-links" href="">Statute</a> and
+                <a class="checkbox-statute-links" href="">Privacy Policy.</a>
+              </span>
+            </label>
+          </div>
+          <div class="form__submit">
+            <button type="submit" class="form__button">Send</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- MODAL END -->

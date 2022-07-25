@@ -1,0 +1,103 @@
+.form {
+  padding: 40px;
+}
+.form__input-title {
+  font-size: 12px;
+  letter-spacing: 0.01em;
+  color: var(--text-light);
+  margin-top: 10px;
+  margin-bottom: 4px;
+}
+.form__title {
+  font-family: $secondaryFont;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.15;
+  text-align: center;
+  color: var(--brand-the-darkest);
+}
+.form__button {
+  font-family: $mainFont;
+  color: var(--text-button-light);
+  background-color: var(--background-button-dark);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  text-align: center;
+  width: 200px;
+  height: 50px;
+  margin: 0 auto;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    background-color: var(--background-button-dark-accent);
+  }
+}
+.form__input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding-left: 10px;
+}
+.form__textarea {
+  width: 100%;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  resize: none;
+  padding: 12px 16px;
+  &::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+  }
+}
+.form__icon {
+  position: absolute;
+  left: 15px;
+  bottom: 14px;
+}
+.form__input-box {
+  position: relative;
+}
+.form__policy-text {
+  display: flex;
+  align-items: center;
+  color: var(--text-light);
+  height: 24px;
+  margin: 20px auto 30px auto;
+}
+.form__policy-text::before {
+  display: inline-block;
+  content: '';
+  width: 16px;
+  height: 15px;
+  border: 2px solid #fff;
+  border-radius: 2px;
+  margin-right: 8px;
+}
+.form__policy:checked + .form__policy-text::before {
+  border: none;
+  background-image: url(../images/svg/check.svg);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form__submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form__input:focus-within,
+.form__textarea:focus-within {
+  border-color: #ffffff;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form__input:focus-within + .form__icon {
+  fill: var(--background-button-dark);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.checkbox-statute-links {
+  color: var(--text-button-dark);
+  font-weight: 700;
+}
