@@ -9,6 +9,14 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   z-index: 150;
+  transform: translatex(0);
+  transition: transform 0.4s;
+  &--hidden {
+    transform: translateX(100%);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
 }
 .menu__close-button {
   position: absolute;
