@@ -1,7 +1,7 @@
 .section__customer-review {
     padding-top: 40px;
     padding-bottom: 0;
-    margin-bottom: 150px;
+    margin-bottom: 250px;
   
     @media screen and (min-width: 768px) {
         padding-bottom: 40px;
@@ -138,7 +138,7 @@
       height: 14px;
     }
     
-    .swiper-pagination-bullet-active {
+    .swiper-pagination {
       margin-bottom: -4px;
       background-image: url(../images/svg/home2.svg);
       background-size: contain;
