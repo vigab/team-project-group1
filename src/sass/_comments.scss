@@ -86,7 +86,6 @@
       line-height: 1.85;
       margin-top: 36px;
       margin-bottom: 40px;
-      // padding-bottom: 40px;
       color: var(--text-dark);
     
       &::before {
@@ -140,13 +139,12 @@
     
     .swiper-pagination {
       margin-bottom: -4px;
-      background-image: url(../images/svg/home2.svg);
+      background-image: url(../images/svg/home.svg);
       background-size: contain;
       background-repeat: no-repeat;
       border-radius: unset;
       background-color: transparent;
       width: 14px;
       height: 14px;
-      display: none;
     }
   }
