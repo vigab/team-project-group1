@@ -2,7 +2,12 @@
     width: 100%;
     display: flex;
     align-items: center;
-    margin-top: -215px;
+    margin-top: 0px;
+}
+@media screen and (max-width: 768px) {
+    .gallery-photo{
+        margin-top: 0px;
+    }
 }
 
 .container--reduced-padding {

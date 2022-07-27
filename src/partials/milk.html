@@ -1,76 +1,80 @@
 <section class="milk" id="how-its-made">
   <div class="container">
-  <article class="about">
-    <h3 class="about__title">TRADITION AND LOVE</h3>
-    <h2 class="about__title2">HOW IT'S MADE?</h2>
-    <div class="about__content">
-      <img
-        class="milk__image"
-        src="./images/about-advantages/cow-desktop@x1.png"
-        srcset="
-          ./images/about-advantages/cow-desktop@x1.png 450w,
-          ./images/about-advantages/cow-desktop@x2.png 900w,
-          ./images/about-advantages/cow-tab@x1.png     354w,
-          ./images/about-advantages/cow-tab@x2.png     708w,
-          ./images/about-advantages/cow-mob@x1.png     270w,
-          ./images/about-advantages/cow-mob@x2.png     540w
-        "
-        alt="milk and cow"
-        sizes="(min-width: 1280px) 516px, (min-width: 768px) 340px, (min-width: 480px) 280px"
-      />
-      <div class="about__text">
-        <p class="about__description">
-          Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus
-          lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.
-        </p>
-        <p class="about__description2">
-          Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci
-          in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna
-          maximus. Cras massa nibh, tincidunt.
-        </p>
-        <p class="about__description2">Aliquam erat volutpat. Aenean accumsan.</p>
-        <button class="about__button">
-          Read more<svg width=8px height=10px class="about__button-icon">
-        <use href="./images/svg/icons.svg#icon-arrow-right-button"></use>
-      </svg>
-        </button>
+    <article class="about">
+      <h3 class="about__title">TRADITION AND LOVE</h3>
+      <h2 class="about__title2">HOW IT'S MADE?</h2>
+      <div class="about__content">
+        <img
+          class="milk__image"
+          src="./images/about-advantages/cow-desktop@x1.png"
+          srcset="
+            ./images/about-advantages/cow-desktop@x1.png 450w,
+            ./images/about-advantages/cow-desktop@x2.png 900w,
+            ./images/about-advantages/cow-tab@x1.png     354w,
+            ./images/about-advantages/cow-tab@x2.png     708w,
+            ./images/about-advantages/cow-mob@x1.png     270w,
+            ./images/about-advantages/cow-mob@x2.png     540w
+          "
+          alt="milk and cow"
+          sizes="(min-width: 1280px) 516px, (min-width: 768px) 340px, (min-width: 480px) 280px"
+        />
+        <div class="about__text">
+          <p class="about__description">
+            Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus
+            lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.
+          </p>
+          <p class="about__description2">
+            Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus
+            orci in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat
+            urna maximus. Cras massa nibh, tincidunt.
+          </p>
+          <p class="about__description2">Aliquam erat volutpat. Aenean accumsan.</p>
+          <button class="about__button" type="button" data-modal2-open>
+            Read more<svg width="8px" height="10px" class="about__button-icon">
+              <use href="./images/svg/icons.svg#icon-arrow-right-button"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </article>
+    <article class="advantages" id="about-us">
+      <h2 class="advantages__title-hidden">Advantages</h2>
+      <ul class="advantages__list">
+        <li>
+          <h2 class="advantages__title advantages__milk">721</h2>
+          <p class="advantages__text">
+            Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+          </p>
+        </li>
+        <li>
+          <h2 class="advantages__title advantages__bucket">16kg</h2>
+          <p class="advantages__text">
+            Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+          </p>
+        </li>
+        <li>
+          <h2 class="advantages__title advantages__lollipop">84</h2>
+          <p class="advantages__text">
+            Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+          </p>
+        </li>
+      </ul>
+    </article>
+  </div>
+  <!-- MODAL2 START -->
+  <div class="modal2-backdrop backdrop--hidden" data-modal2>
+    <div class="modal2">
+      <button type="button" class="menu__close-button" data-modal2-close>
+        <svg width="14px" height="14px" class="menu__close-icon">
+          <use href="./images/svg/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <div class="modal2__text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis voluptatibus
+        doloremque, porro maiores aliquam repellendus aut quam sunt eos cumque qui, officia aperiam,
+        a voluptate molestiae placeat maxime iusto praesentium.
       </div>
     </div>
-  </article>
-  <article class="advantages" id="about-us">
-    <h2 class="advantages__title-hidden">Advantages</h2>
-    <ul class="advantages__list">
-      <li>
-        <img
-          class="advantages__icon"
-          src="./images/about-advantages/1advantage@2x.png"
-          srcset="./images/about-advantages/1advantage.png 900w"
-          alt="colecting milk"
-        />
-        <h2 class="advantages__title">721</h2>
-        <p class="advantages__text">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
-      </li>
-      <li>
-        <img
-          class="advantages__icon"
-          src="./images/about-advantages/2advantage@2x.png"
-          srcset="./images/about-advantages/2advantage.png 900w"
-          alt="colected apples"
-        />
-        <h2 class="advantages__title">16kg</h2>
-        <p class="advantages__text">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
-      </li>
-      <li>
-        <img
-          class="advantages__icon"
-          src="./images/about-advantages/3advantage@2x.png"
-          srcset="./images/about-advantages/3advantage.png 900w"
-          alt="lollipop"
-        />
-        <h2 class="advantages__title">84</h2>
-        <p class="advantages__text">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
-      </li>
-    </ul>
-  </article>
   </div>
+  <!-- MODAL2 END -->
 </section>
